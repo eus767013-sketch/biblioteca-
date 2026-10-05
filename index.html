@@ -1,41 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Albuns_js</title>
+    <link rel="stylesheet"
+        href="https://open.spotify.com/embed/album/7dMDChrId0PHuWQy5R3P5o?utm_source=generator&theme=0&si=940a8c86fb534217">
+    <link rel="stylesheet" href="estilo-figma.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <main class="container">
-        <form>
-            <h1>login</h1>
-            <div class="input-box">
-                <input placeholder="Usuario" type text="email">
-                <i class="bx bxs-user"></i>
+    <header>
+        <!----CABEÇALHO---->
+        <div class="header">
+            <h1>
+                ALBUM LIST
+            </h1>
+        </div>
+        <button class="avatar-btn" aria-label="Ver albuns Salvos" arial aria-expanded="false">
+            <img class="avatar" src="assests2/3d_avatar_1.png" alt="Minha foto de Perfil">
+        </button>
+        <div class="painel salvos" hidden>
+            <h3>Albuns Salvos</h3>
+            <ul id="lista salvos"></ul>
+        </div>
+    </header>
+
+        <!--CORPO----->
+
+    <main>
+        <section class="Cards">
+            <div class="card">
+                <img src="assests2/02.png" alt="Album 2">
+                <h2>Album 2</h2>
+                <p>Tantos Planos!</p>
+                <button class="btn-salvar">Salvar</button>
             </div>
-                <div class="input-box">
-                    <input placeholder="Senha" type="password">
-                    <i class="bx bxs-lock-alt"></i>
+            <div class="card">
+                <img src="assests2/03.png" alt="Album 3">
+                <h2>Album 3</h2>
+                <p>Previa.zip!</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/04.png" alt="Album 4">
+                <h2>Album 4</h2>
+                <p>Nada como um dia apos o outro!</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/05.png" alt="Album 5">
+                <h2>Album 5</h2>
+                <p>Maquina do tempo!</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/06.png" alt="Album 6">
+                <h2>Album 6</h2>
+                <p>AINDA NO MESMO BAIRRO!</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/7.png" alt="Album 7">
+                <h2>Album 7</h2>
+                <p>Contradições!</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/08.png" alt="album 8">
+                <h2>Album 8</h2>
+                <p>Eu Ainda Tenho Coração</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/09.png" alt="album 9">
+                <h2>Album 9</h2>
+                <p>Todo Mundo Odeia O Brocasito</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/10.png" alt="album 10">
+                <h2>Album 10</h2>
+                <p>432Hz</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+            <div class="card">
+                <img src="assests2/11.png" alt="album 11">
+                <h2>Album 11</h2>
+                <p>#OCARAMAU</p>
+                <button class="btn-salvar">Salvar</button>
+            </div>
+                    <div class="card">
+                        <img src="assests2/12.png" alt="Album 12">
+                        <h2>Album 12</h2>
+                        <p>Tempo.zip</p>
+                        <button class="btn-salvar">Salvar</button>
+                    </div>
+                        <div class="card">
+                            <img src="assests2/13.png" alt="Album 13">
+                            <h2>Album 13</h2>
+                            <p>F**K SONGS</p>
+                            <button class="btn-salvar">Salvar</button>
+        </section>
+
+        <section class="secao-players">
+            <h2>LISTENING</h2>
+            <div class="players">
+                <div class="player">
+                    <iframe data-testid="emend-frame" style="border-radius:12px;"
+                        src="https://open.spotify.com/embed/album/7dMDChrId0PHuWQy5R3P5o?utm_source=generator&theme=0&si=15abd896b3b24499"
+                        width="90%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
-
-                <div>
-                    <div class="remember-forgot">
-                        <label>
-                            <input type="checkbox">
-                            Lembrar minha senha
-                        </label>
-                        <a href="#"> Esqueci minha senha</a>
+                <div class="player">
+                    <iframe data-testid="emend-frame" style="border-radius:12px;"
+                        src="https://open.spotify.com/embed/album/0KjiAyaNuS7rHFK72Q8yrq?utm_source=generator&si=c7d5cbfad7b24152"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="player">
+                    <iframe data-testid="emend-frame" style="border-radius:12px;"
+                        src="https://open.spotify.com/embed/album/1Mp4qx0rzYoZHXmTX5ViS4?utm_source=generator&si=2da63a242bbc4536"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                    <div class="player">
+                        <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                        src="https://open.spotify.com/embed/album/0MgSMuYtpk9VLGrR5h3LcG?utm_source=generator&si=644ac1daf3ee49a5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                        </iframe>
                     </div>
+                            <div class="player">
+                            <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                            src="https://open.spotify.com/embed/album/1vR5pzEPXx1i7h8zwosa7D?utm_source=generator&si=8a3fddeacf84450c" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                            </iframe>
+                            </div>
 
-                    <button type="submit"class="login">login</button>
-                    <div class="Register-link">
-                        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-                    </div>
-        </form>
+                            <div class="player">
+                                <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                                src="https://open.spotify.com/embed/album/6MQzQ0autKksIvGr1H9tE7?utm_source=generator&si=ab088e91113c497a" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                                </iframe>
+                            </div>
+        </section>
+
+    </main>
+
+
+                <footer>
+                    <p>made by <strong> Caique js</strong></p>
+                    <p class="footer-sub">My favorites Albums · 2026</p>
+                </footer>
 </body>
 
 </html>
