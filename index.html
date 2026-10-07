@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albuns_js</title>
-    <link rel="stylesheet"
-        href="https://open.spotify.com/embed/album/7dMDChrId0PHuWQy5R3P5o?utm_source=generator&theme=0&si=940a8c86fb534217">
-    <link rel="stylesheet" href="estilo-figma.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -20,12 +17,12 @@
                 ALBUM LIST
             </h1>
         </div>
-        <button class="avatar-btn" aria-label="Ver albuns Salvos" arial aria-expanded="false">
+        <button class="avatar-btn" aria-label="Ver albuns Salvos" aria-expanded="false">
             <img class="avatar" src="assests2/3d_avatar_1.png" alt="Minha foto de Perfil">
         </button>
-        <div class="painel salvos" hidden>
+        <div class="painel-salvos" hidden>
             <h3>Albuns Salvos</h3>
-            <ul id="lista salvos"></ul>
+            <ul id="lista-salvos"></ul>
         </div>
     </header>
 
@@ -104,6 +101,7 @@
                             <h2>Album 13</h2>
                             <p>F**K SONGS</p>
                             <button class="btn-salvar">Salvar</button>
+                        </div>
         </section>
 
         <section class="secao-players">
@@ -112,7 +110,7 @@
                 <div class="player">
                     <iframe data-testid="emend-frame" style="border-radius:12px;"
                         src="https://open.spotify.com/embed/album/7dMDChrId0PHuWQy5R3P5o?utm_source=generator&theme=0&si=15abd896b3b24499"
-                        width="90%" height="352" frameBorder="0" allowfullscreen=""
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
@@ -131,21 +129,22 @@
                         loading="lazy"></iframe>
                 </div>
                     <div class="player">
-                        <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                        <iframe data-testid="emend-frame" style="border-radius:12px;"
                         src="https://open.spotify.com/embed/album/0MgSMuYtpk9VLGrR5h3LcG?utm_source=generator&si=644ac1daf3ee49a5" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                         </iframe>
                     </div>
                             <div class="player">
-                            <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                            <iframe data-testid="emend-frame" style="border-radius:12px;"
                             src="https://open.spotify.com/embed/album/1vR5pzEPXx1i7h8zwosa7D?utm_source=generator&si=8a3fddeacf84450c" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                             </iframe>
                             </div>
 
                             <div class="player">
-                                <iframe src-data-testid="emend-frame" style="border-radius:12px;"
+                                <iframe data-testid="emend-frame" style="border-radius:12px;"
                                 src="https://open.spotify.com/embed/album/6MQzQ0autKksIvGr1H9tE7?utm_source=generator&si=ab088e91113c497a" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                                 </iframe>
                             </div>
+            </div>
         </section>
 
     </main>
